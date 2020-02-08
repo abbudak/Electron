@@ -2,10 +2,20 @@ const electron = require("electron");
 const url = require("url");
 const path = require("path");
 
-const {app} = electron;
+const { app, BrowserWindow } = electron;
 
-let mainWindows;
+let mainWindow;
 
 app.on('ready', () => {
     console.log("it works");
+
+    mainWindow = new BrowserWindow({});
+
+    mainWindow.loadURL(
+        url.format({
+            pathname: path.join(__dirname, "main.html"),
+            protocol: "file",
+            slashes: true
+        })
+    )
 })
