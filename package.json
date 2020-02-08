@@ -1,0 +1,25 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbudak/Electron.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Ahmet Burak Budak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbudak/Electron/issues"
+  },
+  "homepage": "https://github.com/abbudak/Electron#readme",
+  "devDependencies": {
+    "electron": "^8.0.0"
+  }
+}
